@@ -17,9 +17,10 @@ module.exports = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			boxShadow: {
-        "serve": "0px 0px 16px 0px rgba(0, 17, 94, 0.18)"
-      },
+				serve: "0px 0px 16px 0px rgba(0, 17, 94, 0.18)",
+				userCard: "0px 0px 8px 0px rgba(0, 17, 94, 0.04)",
+			},
 		},
 	},
 	plugins: [],
-}; 
+};

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Logo from "@/public/assets/logo.svg";
 import HeroImg from "@/public/assets/hero.png";
 import Serve1 from "@/public/assets/what-serves/serve1.png";
 import Serve2 from "@/public/assets/what-serves/serve2.png";
@@ -10,39 +9,18 @@ import WhyUs3 from "@/public/assets/why-us/why3.svg";
 import WhyUs4 from "@/public/assets/why-us/why4.svg";
 import WhyBgImg from "@/public/assets/why-us/whyBg.svg";
 import PartnerImg from "@/public/assets/partners.png";
-import LogoFooterImg from "@/public/assets/logo_footer.svg";
+
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { CiMail } from "react-icons/ci";
 import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 
-const navlinks = [
-	{ name: "Home", route: "" },
-	{ name: "About us", route: "" },
-	{ name: "Products", route: "" },
-	{ name: "Contact us", route: "" },
-	{ name: "Pricelists", route: "" },
-];
+
 
 export default function Home() {
 	return (
 		<main className="min-h-screen bg-[#FAFCFF]">
-			<nav className="grid grid-cols-12 gap-8 h-[76px] border-b border-[#131E3A16] px-24 pb-2">
-				<div className="flex items-end gap-8 text-primary col-span-6">
-					{navlinks.map((navlink) => (
-						<Link href={navlink.route} key={navlink.name} className="whitespace-nowrap">
-							{navlink.name}
-						</Link>
-					))}
-				</div>
-				<div className="flex items-end justify-start col-span-2">
-					<Image src={Logo} alt="logo" width={57} height={44} />
-				</div>
-				<div className="flex items-end justify-end col-span-4">
-					svscientificco@gmail.com
-				</div>
-			</nav>
 
 			<div className="flex flex-col items-center">
 				<div className="flex items-end justify-start col-span-2">
@@ -332,44 +310,7 @@ export default function Home() {
 			</div>
 
 			{/* footer */}
-			<div className="bg-[#242E48] flex items-center justify-center px-16 py-20 rounded-t-[24px]">
-				<div className="max-w-4xl flex items-center justify-between w-full">
-					<div className="flex flex-col">
-						<Image src={LogoFooterImg} alt="logo" />
-						<div className="text-[#BEC5D2] text-md w-[250px] mt-6">
-							S. V. Scientific Co was established in 1991 with a vision to redefine
-							industry standards, we take pride in our commitment to delivering
-							quality products.
-						</div>
-					</div>
-					<div className="flex gap-12 text-[#FDFCFF]">
-						<div className="flex flex-col gap-5 font-[500] text-md">
-							<div className="cursor-pointer">Home</div>
-							<div className="cursor-pointer">Products</div>
-							<div className="cursor-pointer">About us</div>
-							<div className="cursor-pointer">Contact us</div>
-							<div className="cursor-pointer">Pricelists</div>
-						</div>
-						<div className="flex flex-col gap-4 text-md">
-							<div>
-								<CiMail />
-								<div>svscientificc@gmail.com</div>
-							</div>
-							<div>
-								<IoIosCall />
-								<div className="mt-1">+91 9119014669</div>
-							</div>
-							<div>
-								<FaLocationDot />
-								<div className="w-[230px] mt-1">
-									13 Ram Lila Bhawan, New Mandi, Muzaffar Nagar, Uttar
-									Pradesh-251001
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</main>
 	);
 }
