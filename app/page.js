@@ -47,7 +47,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center justify-center w-full my-10">
+			<div className="flex flex-col items-center justify-center w-full py-10">
 				<div className="max-w-4xl grid grid-cols-2 gap-8 my-10">
 					<div className="text-[#242E49]">
 						<ul className="text-sm list-disc pl-4">
