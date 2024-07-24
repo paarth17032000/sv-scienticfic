@@ -16,26 +16,23 @@ import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 
-
-
 export default function Home() {
 	return (
 		<main className="min-h-screen bg-[#FAFCFF]">
-
 			<div className="flex flex-col items-center">
 				<div className="flex items-end justify-start col-span-2">
 					<Image src={HeroImg} alt="hero_img" width={671} height={373} />
 				</div>
-				<div className="text-md text-secondary font-regular">
+				<div className="md:text-md text-sm text-secondary font-regular">
 					India&apos;s Most Trusted Laboratory Supplier
 				</div>
-				<div className="text-[36px] mt-4">
+				<div className="text-[32px] md:text-[36px] mt-4 text-center">
 					<span className="text-[#242E49]">We provide</span>{" "}
 					<span className="text-[#0F67FD]">Laboratory Equipments</span>
 				</div>
 			</div>
 
-			<div className="bg-[#242E49] mx-20 h-[350px] my-10 rounded-xl brand-background-img flex items-center pl-28">
+			<div className="bg-[#242E49] md:mx-20 mx-4 md:h-[350px] h-[550px] my-10 rounded-xl brand-background-img flex md:items-center items-start md:pl-28 pl-6 pt-6">
 				<div className="flex flex-col">
 					<div className="text-[#DEE3E8] border border-[#DEE3E8] py-3 px-7 rounded-[9px] text-sm w-fit">
 						Our Brands
@@ -47,29 +44,29 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="flex flex-col items-center justify-center w-full py-10">
-				<div className="max-w-4xl grid grid-cols-2 gap-8 my-10">
-					<div className="text-[#242E49]">
+			<div className="flex flex-col items-center justify-center py-10 ">
+				<div className="max-w-4xl flex flex-col items-center md:grid grid-cols-2 gap-8 my-10 mx-4">
+					<div className="text-[#242E49] flex flex-col md:items-start items-center ">
 						<ul className="text-sm list-disc pl-4">
 							<li>Our Services</li>
 						</ul>
-						<div className="text-[48px] font-[500]">What We Serve</div>
+						<div className="md:text-[48px] text-[36px] font-[500]">What We Serve</div>
 					</div>
-					<div className="text-[#5D6A85] text-md font-regular leading-7">
+					<div className="text-[#5D6A85] text-md font-regular leading-7 md:text-left text-center">
 						We offer an extensive selection of chemicals, glassware, and laboratory
 						equipment tailored to meet the diverse requirements of industrial setups and
 						institutes.
 					</div>
 				</div>
 
-				<div className="max-w-4xl grid grid-cols-3 gap-8 my-10">
-					<div className="flex flex-col p-4 rounded-md cursor-pointer  hover:shadow-serve">
+				<div className="max-w-5xl flex flex-col md:grid grid-cols-3 gap-8 my-10 mx-4">
+					<div className="flex flex-col p-4 rounded-[12px] cursor-pointer hover:shadow-serve">
 						<Image
 							src={Serve1}
 							alt="serve_img"
 							width={335}
 							height={334}
-							className="rounded-md"
+							className="rounded-md w-full"
 						/>
 						<div className="text-[#242E49] text-xl mt-4 font-[500]">
 							Chemical Solutions
@@ -85,13 +82,13 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex flex-col p-4 rounded-md cursor-pointer hover:shadow-serve">
+					<div className="flex flex-col p-4 rounded-[12px] cursor-pointer hover:shadow-serve">
 						<Image
 							src={Serve2}
 							alt="serve_img"
 							width={335}
 							height={334}
-							className="rounded-md"
+							className="rounded-md w-full"
 						/>
 						<div className="text-[#242E49] text-xl mt-4 font-[500]">Lab Glassware</div>
 						<div className="text-[#5D6A85] text-sm font-regular my-2 h-16">
@@ -104,13 +101,13 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex flex-col p-4 rounded-md cursor-pointer hover:shadow-serve">
+					<div className="flex flex-col p-4 rounded-[12px] cursor-pointer hover:shadow-serve">
 						<Image
 							src={Serve3}
 							alt="serve_img"
 							width={335}
 							height={334}
-							className="rounded-md"
+							className="rounded-md w-full"
 						/>
 						<div className="text-[#242E49] text-xl mt-4 font-[500]">Lab Equipment</div>
 						<div className="text-[#5D6A85] text-sm font-regular my-2 h-16">
@@ -124,8 +121,8 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="bg-[#242E48] h-[702px] w-full rounded-[24px] mt-20 flex items-center justify-center relative">
-					<div className="max-w-4xl grid grid-cols-2 gap-8 my-10">
+				<div className="bg-[#242E48] md:h-[702px] h-fit w-full rounded-[24px] mt-20 flex items-center justify-center relative">
+					<div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 my-10 md:px-0 px-8">
 						<div className="flex flex-col justify-center gap-4 w-[300px]">
 							<div className="text-[#DEE3E8] px-6 py-2 rounded-[12px] border border-[#DEE3E8] w-fit">
 								Features
@@ -139,9 +136,9 @@ export default function Home() {
 								equipment.
 							</div>
 						</div>
-						<div className="flex flex-col gap-4">
-							<div className="bg-[#3D4966] flex gap-4 p-4 rounded-[12px]">
-								<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+						<div className="flex flex-col gap-y-8 md:gap-4">
+							<div className="bg-[#3D4966] flex md:flex-row flex-col gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+								<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 									<Image
 										src={WhyUs1}
 										alt="why_us_img"
@@ -161,8 +158,8 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div className="bg-[#3D4966] flex gap-4 p-4 rounded-[12px]">
-								<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+							<div className="bg-[#3D4966] flex md:flex-row flex-col gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+								<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 									<Image
 										src={WhyUs2}
 										alt="why_us_img"
@@ -182,8 +179,8 @@ export default function Home() {
 								</div>
 							</div>
 
-							<div className="bg-[#3D4966] flex gap-4 p-4 rounded-[12px]">
-								<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+							<div className="bg-[#3D4966] flex md:flex-row flex-col gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+								<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 									<Image
 										src={WhyUs3}
 										alt="why_us_img"
@@ -201,9 +198,9 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-
-							<div className="bg-[#3D4966] flex gap-4 p-4 rounded-[12px]">
-								<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+							
+							<div className="bg-[#3D4966] flex md:flex-row flex-col gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+								<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 									<Image
 										src={WhyUs4}
 										alt="why_us_img"
@@ -229,12 +226,12 @@ export default function Home() {
 						alt="why_bg_img"
 						width={97}
 						height={143}
-						className="absolute bottom-0 left-[12%]"
+						className="absolute md:block hidden bottom-0 left-[12%]"
 					/>
 				</div>
 
-				<div className="max-w-5xl grid grid-cols-5 gap-x-8 my-28">
-					<div className="flex flex-col items-start col-span-2">
+				<div className="max-w-5xl grid md:grid-cols-5 grid-cols-1 md:gap-x-8 gap-y-8 my-28 mx-4">
+					<div className="flex flex-col items-start md:col-span-2">
 						<button className="text-[#3D4966] text-base border border-[#D6DAE4] px-3 py-2 rounded-[9px]">
 							Trusted by many
 						</button>
@@ -261,7 +258,7 @@ export default function Home() {
 				</div>
 
 				{/* contact us */}
-				<div className=" my-20">
+				<div className=" my-20 mx-4">
 					<div className="flex flex-col items-center">
 						<button className="text-[#3D4966] text-base border border-[#D6DAE4] px-3 py-2 rounded-[9px]">
 							Contact us
@@ -274,7 +271,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-3 gap-8 max-w-4xl mt-10 text-[#242E49] font-[700] text-md">
+					<div className="grid md:grid-cols-3 grid-cols-1 gap-8 max-w-4xl mt-10 text-[#242E49] font-[700] text-md mx-4">
 						<div className="bg-white shadow-lg p-6 rounded-[12px] border border-[#00115E14]">
 							<div className="bg-[#EDF5FF] w-fit p-2 rounded-[9px]">
 								<CiMail />
@@ -310,7 +307,6 @@ export default function Home() {
 			</div>
 
 			{/* footer */}
-			
 		</main>
 	);
 }

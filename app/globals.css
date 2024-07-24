@@ -24,6 +24,14 @@
   width: inherit;
 }
 
+@media screen and (max-width: 560px) {
+  .brand-background-img {
+    background: url(../public/assets/brands-mobile.png)  no-repeat bottom;
+    background-color: #131E3A;
+    width: inherit;
+  }
+}
+
 .active_element {
   position: absolute;
   height: 3px;
