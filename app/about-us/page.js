@@ -22,22 +22,22 @@ import User12 from "@/public/assets/authorized-users/user-12.png";
 export default function Home() {
 	return (
 		<main className="min-h-screen bg-[#FAFCFF] ">
-			<div className=" py-20 md:px-24 px-12">
+			<div className="pt-20 py-0 md:py-20 md:px-24 px-4">
 				<div className="text-[#242E49]">
-					<ul className="text-sm list-disc pl-4">
+					<ul className="text-sm list-disc pl-4 hidden md:block">
 						<li>About us</li>
 					</ul>
-					<div className="text-[48px] font-[500] leading-[50px] mt-4 w-1/2">
+					<div className="text-[36px] md:text-[48px] font-[500] leading-[44px]  md:leading-[50px] mt-0 text-center md:text-left md:mt-4 w-full md:w-1/2">
 						Welcome to a narrative of personalized excellence in every chapter.
 					</div>
 				</div>
 			</div>
 
-			<div className="grid grid-cols-5 gap-x-4 py-20 bg-white md:px-24 px-12">
+			<div className="grid grid-cols-1 md:grid-cols-5 gap-x-4 py-20 md:py-20 bg-white md:px-24 px-8">
 				<div className="text-[#242E49] font-[500] text-[48px] col-span-2 flex items-start justify-center">
 					Our Story
 				</div>
-				<div className="text-[#242D47] text-lg col-span-3 pt-3">
+				<div className="text-[#242D47] text-lg md:text-left text-center col-span-3 pt-3">
 					<p>
 						In the humble beginnings of our venture, we dared to dream big. Starting
 						small, our vision was colossal — to reshape perceptions and promote the use
@@ -76,8 +76,8 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="bg-[#242E48] h-[702px] w-full rounded-[24px] flex items-center justify-center relative">
-				<div className="max-w-4xl grid grid-cols-2 gap-8 my-10">
+			<div className="bg-[#242E48] h-fit md:h-[702px] w-full rounded-[12px] md:rounded-[24px] flex items-center justify-center relative">
+				<div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 my-10 md:px-0 px-8">
 					<div className="flex flex-col justify-center gap-4 w-[340px]">
 						<div className="text-[#DEE3E8] px-6 py-2 rounded-[12px] border border-[#DEE3E8] w-fit">
 							Principles
@@ -91,9 +91,9 @@ export default function Home() {
 							company.
 						</div>
 					</div>
-					<div className="flex flex-col gap-4">
-						<div className="bg-[#3D4966] flex items-center gap-4 p-4 rounded-[12px]">
-							<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+					<div className="flex flex-col md:gap-4 gap-y-8">
+						<div className="bg-[#3D4966] flex flex-col md:flex-row md:items-center items-start gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+							<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 								<Image
 									src={Core1}
 									alt="core_img"
@@ -113,8 +113,8 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="bg-[#3D4966] flex items-center gap-4 p-4 rounded-[12px]">
-							<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+						<div className="bg-[#3D4966] flex flex-col md:flex-row md:items-center items-start gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+							<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 								<Image
 									src={Core2}
 									alt="core_img"
@@ -134,8 +134,8 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="bg-[#3D4966] flex items-center gap-4 p-4 rounded-[12px]">
-							<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+						<div className="bg-[#3D4966] flex flex-col md:flex-row md:items-center items-start gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+							<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 								<Image
 									src={Core3}
 									alt="core_img"
@@ -155,8 +155,8 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="bg-[#3D4966] flex items-center gap-4 p-4 rounded-[12px]">
-							<div className="bg-[#5D6A85] p-4 rounded-[12px]">
+						<div className="bg-[#3D4966] flex flex-col md:flex-row md:items-center items-start gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
+							<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 								<Image
 									src={Core4}
 									alt="core_img"
@@ -182,7 +182,7 @@ export default function Home() {
 					alt="core_bg_img"
 					width={97}
 					height={143}
-					className="absolute bottom-0 left-[12%]"
+					className="absolute md:block hidden bottom-0 left-[12%]"
 				/>
 			</div>
 
@@ -191,58 +191,58 @@ export default function Home() {
 					<button className="text-[#3D4966] text-base border border-[#D6DAE4] px-3 py-2 rounded-[9px]">
 						Our Brands
 					</button>
-					<div className="text-[#242E49] font-[500] text-[48px] leading-[50px] mt-2 pr-4">
+					<div className="text-[#242E49] font-[500] text-[48px] text-center leading-[50px] mt-2 pr-4">
 						Authorised Distributor
 					</div>
 				</div>
 
 				<div className="grid xl:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-5 mt-16">
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User1} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User2} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User3} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User4} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User5} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User6} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User7} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User8} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User9} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User10} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User11} alt="user" />
 					</div>
-					<div className="w-[192px] h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
 						<Image src={User12} alt="user" />
 					</div>
 				</div>
 			</div>
 
-			<div className="py-20 md:px-48 px-12">
-				<div className="flex flex-col items-start">
-					<div className="flex flex-col">
+			<div className="py-20 md:px-48 px-8">
+				<div className="flex flex-col md:items-start items-center">
+					<div className="flex flex-col md:items-start items-center">
 						<button className="text-[#3D4966] text-base w-fit border border-[#D6DAE4] px-3 py-2 rounded-[9px]">
 							Management
 						</button>
-						<div className="text-[#242E49] font-[500] text-[48px] leading-[50px] mt-2 pr-4">
+						<div className="text-[#242E49] font-[500] text-[36px] md:text-[48px] leading-[50px] mt-2 pr-4">
 							Meet Our Team
 						</div>
 						<div className="text-[#5D6A85] text-md mt-4">
@@ -252,14 +252,14 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-col gap-y-8 mt-12">
-					<div className="flex justify-start gap-8 rounded-[12px] bg-white p-6 shadow-userCard">
-						<div className="rounded-[12px] min-w-[187px] min-h-[246px]">
+					<div className="flex flex-col md:flex-row justify-start gap-8 rounded-[12px] bg-white p-6 shadow-userCard">
+						<div className="rounded-[12px] w-full h-auto md:w-[187px] md:h-[246px]">
 							<Image
 								src={Team1}
 								alt="team_img"
 								width={187}
 								height={246}
-								className="rounded-md "
+								className="rounded-md  w-full h-auto md:w-[187px] md:h-[246px]"
 							/>
 						</div>
 						<div className="flex-1 items-strech h-full py-2">
@@ -276,14 +276,14 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex justify-start gap-8 rounded-[12px] bg-white p-6 shadow-userCard">
-						<div className="rounded-[12px] min-w-[187px] min-h-[246px]">
+					<div className="flex flex-col md:flex-row justify-start gap-8 rounded-[12px] bg-white p-6 shadow-userCard">
+						<div className="rounded-[12px] w-full h-auto md:w-[187px] md:h-[246px]">
 							<Image
 								src={Team2}
 								alt="team_img"
 								width={187}
 								height={246}
-								className="rounded-md "
+								className="rounded-md  w-full h-auto md:w-[187px] md:h-[246px]"
 							/>
 						</div>
 						<div className="flex-1 items-strech h-full py-2">
