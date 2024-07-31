@@ -5,7 +5,6 @@ import Core1 from "@/public/assets/core-values/core-1.svg";
 import Core2 from "@/public/assets/core-values/core-2.svg";
 import Core3 from "@/public/assets/core-values/core-3.svg";
 import Core4 from "@/public/assets/core-values/core-4.svg";
-import CoreBgImg from "@/public/assets/core-values/coreBg.svg";
 import User1 from "@/public/assets/authorized-users/user-1.png";
 import User2 from "@/public/assets/authorized-users/user-2.png";
 import User3 from "@/public/assets/authorized-users/user-3.png";
@@ -18,6 +17,7 @@ import User9 from "@/public/assets/authorized-users/user-9.png";
 import User10 from "@/public/assets/authorized-users/user-10.png";
 import User11 from "@/public/assets/authorized-users/user-11.png";
 import User12 from "@/public/assets/authorized-users/user-12.png";
+import CoreBgImg from "@/public/assets/core-values/coreBg.svg";
 
 export default function Home() {
 	return (
