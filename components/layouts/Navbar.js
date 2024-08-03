@@ -4,8 +4,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Logo from "@/public/assets/logo.svg";
 import { CiMail } from "react-icons/ci";
+import MobileMenu from "../Dropdown/MenuDropdown";
 
-const navlinks = [
+export const navlinks = [
 	{ name: "Home", route: "/" },
 	{ name: "About us", route: "/about-us" },
 	{ name: "Products", route: "/products" },
@@ -37,10 +38,17 @@ export default function Navbar() {
 				</div>
 				<div className="flex items-end justify-end col-span-4">
 					<div className="flex items-center gap-1">
-                    <CiMail className="text-[#0F67FD] font-[700]" size={20} />
+						<CiMail className="text-[#0F67FD] font-[700]" size={20} />
 						<div>svscientificco@gmail.com</div>
 					</div>
 				</div>
+			</nav>
+
+			<nav className="flex justify-between items-center h-[76px] bg-[#FAFCFF] px-6 md:hidden w-full">
+				<div className="">
+					<Image src={Logo} alt="logo" width={57} height={44} />
+				</div>
+				<MobileMenu />
 			</nav>
 		</>
 	);

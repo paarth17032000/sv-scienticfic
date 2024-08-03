@@ -9,6 +9,7 @@ import WhyUs3 from "@/public/assets/why-us/why3.svg";
 import WhyUs4 from "@/public/assets/why-us/why4.svg";
 import WhyBgImg from "@/public/assets/why-us/whyBg.svg";
 import PartnerImg from "@/public/assets/partners.png";
+import ReviewImg from "@/public/assets/reviews/review_stars.svg";
 
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { CiMail } from "react-icons/ci";
@@ -198,7 +199,7 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-							
+
 							<div className="bg-[#3D4966] flex md:flex-row flex-col gap-4 p-6 md:p-4 md:rounded-[12px] rounded-[24px]">
 								<div className="bg-[#5D6A85] p-4 rounded-[12px] md:w-auto w-fit">
 									<Image
@@ -230,7 +231,7 @@ export default function Home() {
 					/>
 				</div>
 
-				<div className="max-w-5xl grid md:grid-cols-5 grid-cols-1 md:gap-x-8 gap-y-8 my-28 mx-4">
+				<div className="max-w-5xl grid md:grid-cols-5 grid-cols-1 md:gap-x-8 gap-y-8 mt-28 mb-20 mx-4">
 					<div className="flex flex-col items-start md:col-span-2">
 						<button className="text-[#3D4966] text-base border border-[#D6DAE4] px-3 py-2 rounded-[9px]">
 							Trusted by many
@@ -250,6 +251,56 @@ export default function Home() {
 					<div className="flex flex-col items-startt justify-end">
 						<div className="text-[#242E49] text-[36px] font-[700]">1K+</div>
 						<div className="text-[#5D6A85] text-lg font-[700]">Product Count</div>
+					</div>
+				</div>
+
+				<div className="flex md:flex-row flex-col md:gap-x-10 gap-y-4 mb-28">
+					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
+						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
+						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
+							“"I have been a loyal customer of S,V, Scientific for the past three
+							years, and my experience has been nothing short of exceptional. The
+							quality of their products.”
+						</div>
+						<Image src={ReviewImg} alt="review" width={150} height={150} />
+						<div className="flex flex-col flex-1 justify-end">
+							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
+							<div className="text-[#5D6A85] text-lg font-[500]">
+								Balrampur Chini Mill
+							</div>
+						</div>
+					</div>
+
+					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
+						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
+						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
+							“"I have been a loyal customer of S,V, Scientific for the past three
+							years, and my experience has been nothing short of exceptional. The
+							quality of their products.”
+						</div>
+						<Image src={ReviewImg} alt="review" width={150} height={150} />
+						<div className="flex flex-col flex-1 justify-end">
+							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
+							<div className="text-[#5D6A85] text-lg font-[500]">
+								Balrampur Chini Mill
+							</div>
+						</div>
+					</div>
+
+					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
+						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
+						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
+							“"I have been a loyal customer of S,V, Scientific for the past three
+							years, and my experience has been nothing short of exceptional. The
+							quality of their products.”
+						</div>
+						<Image src={ReviewImg} alt="review" width={150} height={150} />
+						<div className="flex flex-col flex-1 justify-end">
+							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
+							<div className="text-[#5D6A85] text-lg font-[500]">
+								Balrampur Chini Mill
+							</div>
+						</div>
 					</div>
 				</div>
 
