@@ -329,7 +329,14 @@ export default function Home() {
 							</div>
 							<div className=" mt-10">Mail us</div>
 							<div className="text-[#5D6A85] font-[400]">We are here to help</div>
-							<div className=" mt-2">svscientificco@gmail.com</div>
+							<div className="mt-2">
+								<a
+									href="mailto:svscientificco@gmail.com"
+									className="hover:underline duration-200 linear mt-2"
+								>
+									svscientificco@gmail.com
+								</a>
+							</div>
 						</div>
 
 						<div className="bg-white shadow-lg p-6 rounded-[12px] border border-[#00115E14]">

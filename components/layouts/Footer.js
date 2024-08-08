@@ -26,8 +26,10 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-col gap-4 text-md">
 						<div>
-							<CiMail />
-							<div>svscientificc@gmail.com</div>
+							<a href="mailto:svscientificco@gmail.com">
+								<CiMail />
+								<div>svscientificc@gmail.com</div>
+							</a>
 						</div>
 						<div>
 							<IoIosCall />
