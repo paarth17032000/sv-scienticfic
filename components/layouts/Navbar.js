@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import Logo from "@/public/assets/logo.svg";
 import { CiMail } from "react-icons/ci";
 import MobileMenu from "../Dropdown/MenuDropdown";
@@ -16,8 +17,15 @@ export const navlinks = [
 
 export default function Navbar() {
 	const pathname = usePathname();
+	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+	const toggleMobileMenu = () => {
+		setMobileMenuOpen(!isMobileMenuOpen);
+	};
+
 	return (
 		<>
+			{/* Desktop Navigation */}
 			<nav className="lg:grid grid-cols-12 gap-8 h-[76px] border-b border-[#131E3A16] px-24 pb-2 hidden ">
 				<div className="flex items-end gap-8 text-primary col-span-6">
 					{navlinks.map((navlink) => (
@@ -44,11 +52,20 @@ export default function Navbar() {
 				</div>
 			</nav>
 
+			{/* Mobile Navigation */}
 			<nav className="flex justify-between items-center h-[76px] bg-[#FAFCFF] px-6 md:hidden w-full">
-				<div className="">
+				<div>
 					<Image src={Logo} alt="logo" width={57} height={44} />
 				</div>
-				<MobileMenu />
+				<button
+					onClick={toggleMobileMenu}
+					className="text-primary"
+					aria-label="Toggle mobile menu"
+				>
+					{/* Use an icon or text for toggling */}
+					Menu
+				</button>
+				{isMobileMenuOpen && <MobileMenu />}
 			</nav>
 		</>
 	);

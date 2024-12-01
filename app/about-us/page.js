@@ -5,18 +5,18 @@ import Core1 from "@/public/assets/core-values/core-1.svg";
 import Core2 from "@/public/assets/core-values/core-2.svg";
 import Core3 from "@/public/assets/core-values/core-3.svg";
 import Core4 from "@/public/assets/core-values/core-4.svg";
-import User1 from "@/public/assets/authorized-users/user-1.png";
-import User2 from "@/public/assets/authorized-users/user-2.png";
-import User3 from "@/public/assets/authorized-users/user-3.png";
-import User4 from "@/public/assets/authorized-users/user-4.png";
-import User5 from "@/public/assets/authorized-users/user-5.png";
-import User6 from "@/public/assets/authorized-users/user-6.png";
-import User7 from "@/public/assets/authorized-users/user-7.png";
-import User8 from "@/public/assets/authorized-users/user-8.png";
-import User9 from "@/public/assets/authorized-users/user-9.png";
-import User10 from "@/public/assets/authorized-users/user-10.png";
-import User11 from "@/public/assets/authorized-users/user-11.png";
-import User12 from "@/public/assets/authorized-users/user-12.png";
+import Thermofisher from "@/public/assets/authorized-users/Thermofisher.svg";
+import Qualigens from "@/public/assets/authorized-users/Qualigens.svg";
+import Whatman from "@/public/assets/authorized-users/Whatman.svg";
+import Borosil from "@/public/assets/authorized-users/Borosil.svg";
+import Remi from "@/public/assets/authorized-users/Remi.svg";
+import Systronics from "@/public/assets/authorized-users/Systronics.svg";
+import Finar from "@/public/assets/authorized-users/Finar.svg";
+import Shimadzu from "@/public/assets/authorized-users/Shimadzu.svg";
+import Duran from "@/public/assets/authorized-users/Duran.svg";
+import Rankem from "@/public/assets/authorized-users/Rankem.svg";
+import Avantor from "@/public/assets/authorized-users/Avantor.svg";
+import Molychem from "@/public/assets/authorized-users/Molychem.svg";
 import CoreBgImg from "@/public/assets/core-values/coreBg.svg";
 
 export default function Home() {
@@ -197,43 +197,70 @@ export default function Home() {
 				</div>
 
 				<div className="grid xl:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-5 mt-16">
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User1} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>
+						<div className="p-2">
+							<Image src={Thermofisher} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User2} alt="user" />
+
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Qualigens} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User3} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Whatman} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User4} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Borosil} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User5} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Remi} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User6} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Systronics} alt="user" width={100} height={80} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User7} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Finar} alt="user" width={100} height={100} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User8} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Shimadzu} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User9} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Duran} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User10} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Rankem} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User11} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Avantor} alt="user" width={130} height={130} />
+						</div>
 					</div>
-					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] border flex items-center justify-center shadow-userCard">
-						<Image src={User12} alt="user" />
+					<div className="w-[150px] h-[98px] md:p-0 p-4 md:w-[192px] md:h-[126px] rounded-[12px] flex items-center justify-center"
+						style={{ boxShadow: '0 0px 8px rgba(0, 17, 94, 0.08)' }}>						<div className="p-2">
+							<Image src={Molychem} alt="user" width={130} height={130} />
+						</div>
 					</div>
 				</div>
+
 			</div>
 
 			<div className="py-20 md:px-48 px-8">

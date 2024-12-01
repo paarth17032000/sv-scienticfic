@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className="flex flex-col md:items-start items-center">
 					<Image src={LogoFooterImg} alt="logo" />
 					<div className="text-[#BEC5D2] md:text-left text-center text-md w-[250px] mt-6">
-						S. V. Scientific Co was established in 1991 with a vision to redefine
+						S.V. Scientific Co was established in 1991 with a vision to redefine
 						industry standards, we take pride in our commitment to delivering quality
 						products.
 					</div>

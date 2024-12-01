@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import HeroImg from "@/public/assets/hero.png";
+import HeroImg from "@/public/assets/heroImg.png";
 import Serve1 from "@/public/assets/what-serves/serve1.png";
 import Serve2 from "@/public/assets/what-serves/serve2.png";
 import Serve3 from "@/public/assets/what-serves/serve3.png";
@@ -15,9 +16,13 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 import { CiMail } from "react-icons/ci";
 import { IoIosCall } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 
 export default function Home() {
+	const [isTypingComplete, setTypingComplete] = useState(false);
+
 	return (
 		<main className="min-h-screen bg-[#FAFCFF]">
 			<div className="flex flex-col items-center">
@@ -29,11 +34,48 @@ export default function Home() {
 				</div>
 				<div className="text-[32px] md:text-[36px] mt-4 text-center">
 					<span className="text-[#242E49]">We provide</span>{" "}
-					<span className="text-[#0F67FD]">Laboratory Equipments</span>
+					<span className="text-[#0F67FD] relative">
+						{/* Animated Text */}
+						<Typewriter
+							words={["Laboratory Equipments", "Laboratory Chemicals", "Laboratory Glassware", "Trusted Products", "Customer Satisfaction"]}
+							loop={0}
+							typeSpeed={100}
+							deleteSpeed={50}
+							delaySpeed={1000}
+							onLoopDone={() => setTypingComplete(true)} 
+						/>
+
+						{/* Curved Line */}
+						{isTypingComplete && (
+							<svg
+								className="absolute left-1/2 transform -translate-x-1/2 mt-2"
+								width="200"
+								height="20"
+								viewBox="0 0 200 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M0 10 Q100 30 200 10"
+									stroke="#0F67FD"
+									strokeWidth="2"
+									fill="none"
+								>
+									<animate
+										attributeName="stroke-dasharray"
+										from="0, 200"
+										to="200, 0"
+										dur="0.5s"
+										fill="freeze"
+									/>
+								</path>
+							</svg>
+						)}
+					</span>
 				</div>
 			</div>
 
-			<div className="bg-[#242E49] md:mx-20 mx-4 md:h-[350px] h-[550px] my-10 rounded-xl brand-background-img flex md:items-center items-start md:pl-28 pl-6 pt-6">
+			<div className="bg-[#242E49] md:mx-20 mx-4 md:h-[350px] h-[550px] my-10 mt-20 rounded-xl brand-background-svg flex md:items-center items-start md:pl-28 pl-6 pt-6">
 				<div className="flex flex-col">
 					<div className="text-[#DEE3E8] border border-[#DEE3E8] py-3 px-7 rounded-[9px] text-sm w-fit">
 						Our Brands
@@ -76,8 +118,7 @@ export default function Home() {
 							Precision in every chemical, ensuring optimal performance.
 						</div>
 						<div className="w-full flex justify-end">
-							<div className="flex items-center gap-2 cursor-pointer  text-white w-fit bg-[#0F67FE] py-3 px-3 rounded-[12px]">
-								<span>View more</span>
+							<div className="flex items-center gap-2 text-white w-fit bg-[#242D47] py-3 px-3 rounded-[12px]">
 								<TbArrowNarrowRight size={24} />
 							</div>
 						</div>
@@ -251,56 +292,6 @@ export default function Home() {
 					<div className="flex flex-col items-startt justify-end">
 						<div className="text-[#242E49] text-[36px] font-[700]">1K+</div>
 						<div className="text-[#5D6A85] text-lg font-[700]">Product Count</div>
-					</div>
-				</div>
-
-				<div className="flex md:flex-row flex-col md:gap-x-10 gap-y-4 mb-28">
-					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
-						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
-						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
-							“"I have been a loyal customer of S,V, Scientific for the past three
-							years, and my experience has been nothing short of exceptional. The
-							quality of their products.”
-						</div>
-						<Image src={ReviewImg} alt="review" width={150} height={150} />
-						<div className="flex flex-col flex-1 justify-end">
-							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
-							<div className="text-[#5D6A85] text-lg font-[500]">
-								Balrampur Chini Mill
-							</div>
-						</div>
-					</div>
-
-					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
-						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
-						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
-							“"I have been a loyal customer of S,V, Scientific for the past three
-							years, and my experience has been nothing short of exceptional. The
-							quality of their products.”
-						</div>
-						<Image src={ReviewImg} alt="review" width={150} height={150} />
-						<div className="flex flex-col flex-1 justify-end">
-							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
-							<div className="text-[#5D6A85] text-lg font-[500]">
-								Balrampur Chini Mill
-							</div>
-						</div>
-					</div>
-
-					<div className="flex flex-col gap-6 bg-white h-[458px] w-[350px] p-6 rounded-[24px] shadow-serve">
-						<div className="w-[95px] h-[95px] border border-black/15 rounded-[16px]"></div>
-						<div className="text-[#5D6A85] text-md leading-[30px] mb-2">
-							“"I have been a loyal customer of S,V, Scientific for the past three
-							years, and my experience has been nothing short of exceptional. The
-							quality of their products.”
-						</div>
-						<Image src={ReviewImg} alt="review" width={150} height={150} />
-						<div className="flex flex-col flex-1 justify-end">
-							<div className="text-[#242E49] text-lg font-[700]">Deepak Jha</div>
-							<div className="text-[#5D6A85] text-lg font-[500]">
-								Balrampur Chini Mill
-							</div>
-						</div>
 					</div>
 				</div>
 

@@ -18,8 +18,8 @@
   }
 }
 
-.brand-background-img{
-  background: url(../public/assets/brands.png) no-repeat center;
+.brand-background-svg{
+  background-image: url(../public/assets/Authorised\ Distributors.svg);
   background-color: #131E3A;
   width: inherit;
 }
